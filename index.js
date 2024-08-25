@@ -13,7 +13,7 @@ var markMass2 = 95
 var markHeight2 = 1.88
 var johnMass2 = 85
 var johnHeight2 = 1.76
-    //Calculate both their BMIs using the formula (you can even implement both versions)
+//Calculate both their BMIs using the formula (you can even implement both versions)
 calculatorBMI = (mass, height) => {
     return mass/height**2
 }
@@ -46,5 +46,26 @@ if (markHigerBMI2) {
     console.log(`Mark's BMI (${markBMI.toFixed(2)}) is higher than John (${johnBMI.toFixed(2)})`);
 } else {
     console.log(`John's BMI (${johnBMI.toFixed(2)}) is higher than Mark (${markBMI.toFixed(2)})`);
+}
+//Coding Challenge #3
+//There are two gymnastics teams, Dolphins and Koalas. They compete against each
+//other 3 times. The winner with the highest average score wins a trophy!
+var dolphins = [96, 108, 89]
+var koalas = [88, 91, 110]
+//Calculate the average score for each team, using the test data below
+const average = list => list.reduce((prev, curr) => prev + curr) / list.length;
+console.log("Code Challenge #3");
+console.log("Dolphins'average: " + average(dolphins));
+console.log("Koalas'average: " +average(koalas));
+//Compare the team's average scores to determine the winner of the competition,
+//and print it to the console. Don't forget that there can be a draw, so test for that
+//as well (draw means they have the same average score)
+if (average(dolphins) === average(koalas)){
+    console.log("Draw");
+} else {
+    (average(dolphins) > average(koalas)) ?
+    console.log("Dolphins Win")
+    :
+    console.log("Koalas Win");
 }
 
