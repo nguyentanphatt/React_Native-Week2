@@ -68,4 +68,3 @@ if (average(dolphins) === average(koalas)){
     :
     console.log("Koalas Win");
 }
-
