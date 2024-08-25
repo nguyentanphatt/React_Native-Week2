@@ -59,7 +59,7 @@ console.log("Dolphins'average: " + average(dolphins));
 console.log("Koalas'average: " +average(koalas));
 //Compare the team's average scores to determine the winner of the competition,
 //and print it to the console. Don't forget that there can be a draw, so test for that
-//as well (draw means they have the same average score)
+//as well (draw means they have the same average score) a
 if (average(dolphins) === average(koalas)){
     console.log("Draw");
 } else {
