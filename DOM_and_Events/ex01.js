@@ -7,15 +7,12 @@ Your tasks:
 fields
 4. Also restore the original background color (#222) and number width (15rem)*/
 let againBtn = document.querySelector('.again')
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
 
 againBtn.addEventListener('click', function () {
   
-  score = 20;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  let score = 20;
+  let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-  
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.number').textContent = '?';
   document.querySelector('.score').textContent = score;
